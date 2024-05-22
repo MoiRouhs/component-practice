@@ -3,8 +3,13 @@ import React from 'react';
 export const ThirdComponent = ( props ) => {
     console.log('props', props);
     return(
-        <div>
-          <h2>Tercer Componente</h2>
-        </div>
+    <div>
+        <h2>Comunicación entre Componentes</h2>
+        <ul>
+            <li>{ props.name }</li>
+            <li>{ props.lastName }</li>
+            <li>{ props.card.allergies }</li>
+        </ul>
+    </div>
     );
 };

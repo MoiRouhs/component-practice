@@ -26,7 +26,7 @@ export const MyComponent = () => {
         <p>Repositorio: { repository }</p>
         <h3>Datos Estudiante</h3>
         <p>Nombre: { student.name }</p>
-        <p>Apellido: { student.lastName }</p>
+         <p>Apellido: { student.lastName }</p>
         <p>Telefono: { student.mobile }</p>
         <p>LinkId Perfil: { student.linkedProfile }</p>
         

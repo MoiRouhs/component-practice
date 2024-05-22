@@ -17,7 +17,6 @@ function App() {
         <p>
           Estructura inicial del proyecto y limpia.
         </p>
-
       </header>
       <ThirdComponent
         name="Juan"

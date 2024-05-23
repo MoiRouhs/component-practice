@@ -3,23 +3,38 @@ import './App.css';
 import { MyComponent } from './components/MyComponent';
 import { SecondComponent } from './components/SecondComponent';
 import { ThirdComponent } from './components/ThirdComponent';
+import { useState } from 'react';
+import { Child } from './components/Child'
+
 function App() {
+    const [name, setName] = useState('Lina');
+    const [message, setMessage] = useState('');
+    const addMessage = (message) => {
+        console.log(message);
+        setMessage(message);
+    }
     const medicalRecord ={
         height:"160",
         bloodGroup:"RH O+",
         allergies:"None"
     };
+    const test = 'Juan';
     
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Estructura inicial del proyecto y limpia.
+            Mensaje del hijo: <b>{ message }</b> 
         </p>
       </header>
+      <Child
+          name={ name }
+          setName={setName}
+          addMessage={addMessage}
+      />
       <ThirdComponent
-        name="Juan"
+        name={test}
         lastName="Espinoza"
         card={medicalRecord}
       />
